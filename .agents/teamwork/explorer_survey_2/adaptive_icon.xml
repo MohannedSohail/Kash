@@ -1,0 +1,86 @@
+<!-- Android Adaptive Icon XML Specifications for Kash -->
+
+<!-- 1. res/mipmap-anydpi-v26/ic_launcher.xml -->
+<?xml version="1.0" encoding="utf-8"?>
+<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
+    <background android:drawable="@drawable/ic_launcher_kash_background" />
+    <foreground android:drawable="@drawable/ic_launcher_kash_foreground" />
+    <monochrome android:drawable="@drawable/ic_launcher_kash_monochrome" />
+</adaptive-icon>
+
+<!-- ======================================================== -->
+<!-- 2. res/drawable/ic_launcher_kash_background.xml (108x108 dp) -->
+<!-- ======================================================== -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <path
+        android:pathData="M0,0h108v108h-108z"
+        android:fillColor="#0B0F17" />
+    <!-- Subtle gradient circle for depth in center -->
+    <path
+        android:pathData="M54,54m-42,0a42,42 0 1,1 84,0a42,42 0 1,1 -84,0"
+        android:fillColor="#111827" />
+</vector>
+
+<!-- ======================================================== -->
+<!-- 3. res/drawable/ic_launcher_kash_foreground.xml (108x108 dp, 72dp safe zone) -->
+<!-- ======================================================== -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    
+    <!-- Vertical Spine (Center-Left) -->
+    <path
+        android:pathData="M38,26 L45,26 A3.5,3.5 0 0,1 48.5,29.5 L48.5,78.5 A3.5,3.5 0 0,1 45,82 L38,82 A3.5,3.5 0 0,1 34.5,78.5 L34.5,29.5 A3.5,3.5 0 0,1 38,26 Z"
+        android:fillColor="#10B981" />
+
+    <!-- Upper Diagonal Flow (K Upper Arm) -->
+    <path
+        android:pathData="M48,51 L67,33 L73,39 L54,57 Z"
+        android:fillColor="#34D399" />
+    <!-- Upper Chevron Tip -->
+    <path
+        android:pathData="M65,30 L77,33 L72,44 Z"
+        android:fillColor="#10B981" />
+
+    <!-- Lower Diagonal Flow (K Lower Arm) -->
+    <path
+        android:pathData="M52,54 L70,72 L64,78 L46,60 Z"
+        android:fillColor="#0D9488" />
+    <!-- Lower Chevron Tip -->
+    <path
+        android:pathData="M73,69 L75,81 L63,79 Z"
+        android:fillColor="#2DD4BF" />
+
+    <!-- Amber Spark Node -->
+    <path
+        android:pathData="M51,54m-4,0a4,4 0 1,1 8,0a4,4 0 1,1 -8,0"
+        android:fillColor="#F59E0B" />
+    <path
+        android:pathData="M51,54m-1.5,0a1.5,1.5 0 1,1 3,0a1.5,1.5 0 1,1 -3,0"
+        android:fillColor="#FFFFFF" />
+</vector>
+
+<!-- ======================================================== -->
+<!-- 4. res/drawable/ic_launcher_kash_monochrome.xml (Android 13+ Themed Icons) -->
+<!-- ======================================================== -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <path
+        android:pathData="M38,26 L45,26 A3.5,3.5 0 0,1 48.5,29.5 L48.5,78.5 A3.5,3.5 0 0,1 45,82 L38,82 A3.5,3.5 0 0,1 34.5,78.5 L34.5,29.5 A3.5,3.5 0 0,1 38,26 Z
+                         M48,51 L67,33 L73,39 L54,57 Z
+                         M65,30 L77,33 L72,44 Z
+                         M52,54 L70,72 L64,78 L46,60 Z
+                         M73,69 L75,81 L63,79 Z
+                         M51,54m-4,0a4,4 0 1,1 8,0a4,4 0 1,1 -8,0"
+        android:fillColor="#FFFFFF" />
+</vector>

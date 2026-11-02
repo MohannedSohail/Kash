@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="50%" stop-color="#0B0F17"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+
+    <!-- Emerald Fluid Gradient (Left Stem & Top Arm) -->
+    <linearGradient id="emeraldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34D399"/>
+      <stop offset="50%" stop-color="#10B981"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+
+    <!-- Teal-Cyan Secondary Gradient (Bottom Arm / Return Loop) -->
+    <linearGradient id="tealGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2DD4BF"/>
+      <stop offset="50%" stop-color="#0D9488"/>
+      <stop offset="100%" stop-color="#042F2E"/>
+    </linearGradient>
+
+    <!-- Accent Amber Glow (Exchange Intersection Spark) -->
+    <linearGradient id="amberGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDE68A"/>
+      <stop offset="50%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#D97706"/>
+    </linearGradient>
+
+    <!-- Subtle Drop Shadow Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="12" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background Rounded Canvas -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)" stroke="#1E293B" stroke-width="4"/>
+
+  <!-- Outer Subtle Ambient Ring -->
+  <circle cx="256" cy="256" r="190" fill="none" stroke="#10B981" stroke-width="1.5" stroke-dasharray="6 8" opacity="0.25"/>
+
+  <!-- Kash Emblem Group -->
+  <g id="KashMonogram" filter="url(#glow)">
+    <!-- Vertical Pillar: Currency Inflow Spine with Rounded Terminals -->
+    <path d="M 160 120 
+             C 160 106.7, 170.7 96, 184 96 
+             L 184 96 
+             C 197.3 96, 208 106.7, 208 120 
+             L 208 392 
+             C 208 405.3, 197.3 416, 184 416 
+             C 170.7 416, 160 405.3, 160 392 
+             Z" 
+          fill="url(#emeraldGrad)"/>
+
+    <!-- Upper Exchange Vector (Diagonal Ascending Arrow forming 'K' Upper Branch) -->
+    <path d="M 200 240 
+             C 215 220, 240 195, 290 152 
+             C 305 139, 328 148, 332 168 
+             C 334 180, 326 193, 314 203 
+             L 258 250 
+             C 246 260, 225 258, 200 240 Z" 
+          fill="url(#emeraldGrad)"/>
+
+    <!-- Upper Arrow Head Glyphs / Flow Chevron -->
+    <path d="M 310 140 L 356 156 L 334 200 Z" fill="#34D399"/>
+
+    <!-- Lower Exchange Vector (Diagonal Descending Arrow forming 'K' Lower Branch & Counter-Flow) -->
+    <path d="M 235 255 
+             L 310 338 
+             C 322 351, 321 371, 308 382 
+             C 295 393, 275 391, 263 378 
+             L 196 304 
+             C 185 292, 195 272, 212 268 
+             C 220 266, 228 268, 235 255 Z" 
+          fill="url(#tealGrad)"/>
+
+    <!-- Lower Arrow Head Glyph / Inflow Chevron -->
+    <path d="M 338 350 L 348 398 L 302 396 Z" fill="#2DD4BF"/>
+
+    <!-- Currency Dynamic Node (The Exchange Intersection Gold Node) -->
+    <circle cx="218" cy="256" r="16" fill="url(#amberGrad)" stroke="#0B0F17" stroke-width="4"/>
+    <circle cx="218" cy="256" r="6" fill="#FFFFFF"/>
+  </g>
+</svg>
